@@ -1,0 +1,5 @@
+Django==5.2.4
+django-crispy-forms==2.4
+crispy-bootstrap4==2025.6
+PyQt5==5.15.9
+pyqt5-tools==5.15.9.3.2

@@ -1,0 +1,42 @@
+{% extends "partials/base.html" %}
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+{%if user.is_authenticated and user.is_staff and user.is_superuser %}
+<div class="card-body">
+  <div class="row">
+      <div class="col-md-4">
+          <a class="text-decoration-none text-dark" href="{% url "Inventory" %}">
+              <div class="card my-card shadow">
+                  <div class="card-body text-center">
+                      <h4>Inventory <i class="fas fa-users"></i></h4>
+                  </div>
+              </div>
+          </a>
+      </div>
+      <div class="col-md-4">
+          <a class="text-decoration-none text-dark" href="{% url "Orders" %}">
+              <div class="card my-card shadow">
+                  <div class="card-body text-center">
+                      <h4>Orders <i class="fas fa-box"></i></h4>
+                      
+                  </div>
+              </div>
+          </a>
+      </div>
+      <div class="col-md-4">
+          <a class="text-decoration-none text-dark" href="{% url "Staff" %}">
+              <div class="card my-card shadow">
+                  <div class="card-body text-center">
+                      <h4>Staff <i class="fas fa-shipping-fast"></i></h4>
+                      
+                  </div>
+              </div>
+          </a>
+      </div>
+  </div></div>
+{% else %}
+{% include 'dash/staff_home.html' %}
+{%endif%}
+    {%endblock%}

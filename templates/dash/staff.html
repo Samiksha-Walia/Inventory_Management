@@ -1,0 +1,33 @@
+{% extends "partials/base.html" %}
+{% block title %} Staff {% endblock %}
+{% block content %}
+<div class ="container">
+    <div class="col-md-8">
+    <table class="table">
+      <thead>
+        <tr>
+         
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Phone Number</th>
+          <th scope="col">Address</th>
+        </tr>
+      </thead>
+      <tbody> 
+          {%for worker in workers %}
+        <tr>
+          <td>{{worker.username}}</td>
+          <td>{{worker.email}}</td>
+          <td>{{worker.profile.phone}}</td>
+          <td>{{worker.profile.address}}</td>            
+          <td>  <a class="btn btn-info btn-sm mr-2" href="{% url 'Staff-details' worker.id%}">view</a></td>
+
+        </tr>
+        {% endfor %}
+        
+      </tbody>
+    </table>
+  </div>
+  </div>
+</div>
+    {%endblock%}
