@@ -1,66 +1,99 @@
+# 📦 Inventory Management System – Stock & Sales Web App
 
-````markdown
-# Inventory Management System
+A full-featured **Inventory Management System** built with **Python**, **Django**, **HTML/CSS**, and **SQLite** to streamline product, supplier, and transaction management. It provides a clean dashboard, real-time search, and CRUD features through a user-friendly interface.
 
-A full-featured Inventory Management System built using Python and hTML, CSS, designed to streamline the management of stock, suppliers, purchases, and sales in a user-friendly GUI interface.
 
-## 🧾 Features
 
-- 📦 Product Management: Add, update, and delete products.
-- 🧑‍💼 Supplier Management: Manage supplier details with ease.
-- 📈 Sales & Purchases: Record and track transactions.
-- 🔍 Real-time Search & Filters: Easily find any product or supplier.
-- 📊 Dashboard Overview: View stock levels and sales insights.
-- 💾 SQLite Integration: All data is stored persistently in a local SQLite database.
-- 🖼️ Logo & Branding: Customize the system with your business logo.
+## 🔥 Key Features
 
-## 🛠️ Tech Stack
+✅ Add, update, and delete products with ease  
+✅ Manage supplier contact and inventory data  
+✅ Record purchase and sales transactions  
+✅ Dashboard view with live stock overview  
+✅ Real-time product/supplier search and filters  
+✅ Supports business branding via logo customization  
+✅ Local data storage using SQLite database  
+✅ Responsive and minimal user interface
 
-| Technology | Role              |
-|------------|-------------------|
-| Python     | Core Logic        |
-| SQLite     | Database Backend  |
-| OS         | File Management   |
+
+
+## 🛠 Tech Stack
+
+| Layer        | Technology Used      |
+|--------------|----------------------|
+| **Backend**  | Python, Django       |
+| **Database** | SQLite               |
+| **Frontend** | HTML, CSS            |
+| **Other**    | OS module (file ops) |
+
+
+
 
 
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### ✅ Prerequisites
 
-Make sure Python 3.7+ is installed. You can download it from [python.org](https://www.python.org/downloads/).
+* Python 3.7 or higher  
+* pip (Python package manager)
 
-### Installation
+### 🧰 Installation Steps
 
-1. **Clone the Repository**
+```bash
+# Clone the repository
+git clone https://github.com/Samiksha-Walia/InventoryManagement.git
 
-   ```bash
-   git clone https://github.com/yourusername/InventoryManagement.git
-   cd InventoryManagement
-````
+# Navigate into the project directory
+cd InventoryManagement
 
-2. **Create a Virtual Environment (Optional but Recommended)**
+# Create a virtual environment (recommended)
+python -m venv env
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ```
+# Activate the virtual environment
+# On Windows
+env\Scripts\activate
+# On macOS/Linux
+source env/bin/activate
 
-3. **Install Dependencies**
+# Install required packages
+pip install -r requirements.txt
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+# Run database migrations
+python manage.py migrate
 
-4. **Run the Application**
+# Create a superuser to access the admin panel
+python manage.py createsuperuser
 
-   ```bash
-   python manage.py runserver
-   ```
+# Start the development server
+python manage.py runserver
+```
+
+Visit `http://127.0.0.1:8000` in your browser to use the application.  
+Access the admin panel at `http://127.0.0.1:8000/admin/`.
+
+
+
+## 🌱 Future Enhancements
+
+* 📤 Export reports as CSV/PDF  
+* 📈 Integrate charts for analytics  
+* 🔐 Add user roles (Admin, Staff, Viewer)  
+* 🌐 Multi-language UI support  
+* ☁️ Cloud database integration (PostgreSQL or MySQL)  
+* 🧾 Barcode or QR code generation for inventory tags  
 
 
 
 ## 👤 Author
 
-**Samiksha Walia**
-[GitHub](https://github.com/Samiksha-Walia) • [LinkedIn](https://linkedin.com/in/samiksha-walia) 
+**Samiksha Walia**  
+[GitHub](https://github.com/Samiksha-Walia) • [LinkedIn](https://linkedin.com/in/samiksha-walia)  
+
+
+
+## ⭐️ Support This Project
+
+If you found this project helpful, please consider giving it a ⭐️ on GitHub to show your support.
+
+> 📝 *Built for educational and learning purposes. Inspired by real-world inventory systems.*
