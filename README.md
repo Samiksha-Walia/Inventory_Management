@@ -87,13 +87,13 @@ Access the admin panel at `http://127.0.0.1:8000/admin/`.
 
 ## 👤 Contributors
 
-* **Samiksha Walia** 
+* **Samiksha Walia**
 [GitHub](https://github.com/Samiksha-Walia) • [LinkedIn](https://linkedin.com/in/samiksha-walia) 
 
-* **Samdisha Walia**  
+* **Samdisha Walia** 
 [GitHub](https://github.com/Samdisha-Walia) • [LinkedIn](https://linkedin.com/in/samdisha-walia) 
 
-* **Japesh Jhatta**  
+* **Japesh Jhatta** 
 [GitHub](https://github.com/japesh5579) • [LinkedIn](https://www.linkedin.com/in/japesh-jhatta)
 
 
